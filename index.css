@@ -165,16 +165,21 @@ body,
     background: url("./Team/Abhijeet_K.png")
       no-repeat 50% / cover;
   }
+  .ourteam-container > div:nth-of-type(9) {
+    background: url("./Team/Saurav_S.png")
+      no-repeat 50% / cover;
+  }
   
   .ourteam-card {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Ensures space between the top and bottom divs */
     min-height: 200px;
-    padding: 20px;
     opacity: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
     height: 100%;
     background: rgb(2, 2, 46);
     background: linear-gradient(
@@ -190,11 +195,13 @@ body,
   .ourteam-card > .top-content {
     /* Style for the top div */
     margin-bottom: auto; /* Pushes it to the top */
+    font-size: 1rem;
   }
   
   .ourteam-card > .bottom-content {
     /* Style for the bottom div */
     margin-top: auto; /* Pushes it to the bottom */
+    font-size: 1rem;
   }
   
   .ourteam-card .name {
@@ -317,7 +324,7 @@ body,
   }
 
   .button2 {
-    --button-background: oklch(20% 0.0666 var(--hue));
+    --button-background: oklch(20% 0.0666 black);
     --text-base: oklch(45% 0.175 var(--hue));
     --text-hover: oklch(95% 0.145 calc(var(--hue) + 30));
   
@@ -330,21 +337,23 @@ body,
     all: unset;
   
     /* Text */
-    color: white;
+    color: rgb(124, 123, 123);
     font: 700 0.9rem/1 Raleway, sans-serif;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     text-align: center;
   
     /* Button sizing */
-    padding: 0.85em;
+    padding: 0.80em;
+    padding-right: 10px;
     max-width: 100%;
-    width: 6em;
+    width: 8em;
+    margin-right: 5px;
   
     /* Button styling */
     background-color: var(--button-background);
     background-clip: padding-box;
-    border: 2px solid white;
+    border: 2px solid rgb(124, 123, 123);
     border-radius: 1em;
     cursor: pointer;
   
