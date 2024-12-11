@@ -1,0 +1,4 @@
+{
+    "git.ignoreLimitWarning": true,
+    "build": "tailwindcss -i ./styles.css -o ./dist/output.css --watch"
+}
