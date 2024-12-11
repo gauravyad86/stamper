@@ -665,6 +665,22 @@ video {
   margin-top: 60px;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-\[20px\] {
+  margin-right: 20px;
+}
+
+.mr-\[40px\] {
+  margin-right: 40px;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px;
+}
+
 .block {
   display: block;
 }
@@ -784,6 +800,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-hidden {
