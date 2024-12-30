@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,23 +20,29 @@
     <canvas class="p-canvas-webgl" id="canvas-webgl" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
     <div id="content" style="position: relative; z-index: 1; height: 100vh; overflow-y: auto;">
       <div >
-        <div id="header" class="flex flex-row bg-black/50 p-4 rounded-[15px] justify-center items-center">
-          <div class="flex-1"></div>
-          <div class="flex items-center gap-4 mr-[10px]">
-            <a href="#ourteam" onclick="scrollToTeam(event)" class="relative inline-block text-sm group mr-2" target="_blank">
-              <button class="button2 text-gray-500 font-bold rounded-lg px-5 w-full py-2 text-sm">
-                About Us
-              </button>
-              <button class="button2 text-gray-500 font-bold rounded-lg px-3 py-2 text-sm">
-                Our Team
-              </button>
-              <button class="button2 text-gray-500 font-bold rounded-lg px-5 w-full py-2 text-sm">
-                Contact
-              </button>
-              <button class="button2 text-sm">
-                Resources
-              </button>
-            </a>
+        <div id="header" class="header flex flex-row bg-black/50 p-4 rounded-[15px] justify-center items-center">
+          <div class="lg:hidden flex-1"></div>
+          <div class="lg:hidden flex items-center gap-4 mr-[10px]">
+            <!-- Mobile view: Hide buttons and show menu -->
+            <div class=" header-items md:flex">
+              <a href="#ourteam" onclick="scrollToTeam(event)" class="relative inline-block text-sm group mr-2" target="_blank">
+                <button class="button2 text-gray-500 font-bold rounded-lg px-5 w-full py-2 text-sm">
+                  About Us
+                </button>
+                <button class="button2 text-gray-500 font-bold rounded-lg px-3 py-2 text-sm">
+                  Our Team
+                </button>
+                <button class="button2 text-gray-500 font-bold rounded-lg px-5 w-full py-2 text-sm">
+                  Contact
+                </button>
+                <button class="button2 text-sm">
+                  Resources
+                </button>
+              </a>
+            </div>
+            <!-- Mobile view: Dropdown menu -->
+            <div class="hamburger flex  md:collapse   items-center">
+            </div>
             <a 
               class="rounded-xl text-blue-300 text-center md:h-auto transform hover:scale-125 duration-300 ease-in-out"
               href="https://www.linkedin.com/company/stamperai/"
@@ -51,10 +58,10 @@
             </a>
           </div>
         </div>
-        <div id="stamperai" class="mt-[60px]">
-          <div class="relative bg-black w-[30%] mx-auto rounded-full flex items-center justify-center text-gray-400 font-bold text-4xl lg:text-7xl  animate-border  py-[60px] shadow-[inset_0_0_20px_rgba(255,255,255,0.3)]"
+        <div id="stamperai" class="stamperai flex justify-center mt-[60px]">
+          <div class="relative bg-black w-[30%] rounded-full flex items-center justify-center text-gray-400 font-bold text-4xl lg:text-7xl  animate-border  py-[60px] shadow-[inset_0_0_20px_rgba(255,255,255,0.3)]"
           >
-            <div style = "background-image: url(./stamperbanner.png); background-size: cover; width: 100%; height: 100%; background-position: center;" class="absolute rounded-full flex items-center justify-center px-[34px] py-[28px]">
+            <div style = "background-image: url(./stamperbanner.png); background-size: cover; width: 100%; height: 100%; background-position: center;" class="absolute rounded-full flex items-center justify-center">
 
             </div>
           </div>
@@ -70,7 +77,7 @@
             <!-- The div can remain empty as the container -->
             <script type="module" src="scripts/dynamiclogo.js"></script>
         </div>
-        <div id="ourteam" class = " text-center text-gray-300 text-lg font-bold lg:text-8xl">
+        <div id="ourteam" class = "ourteam text-center text-gray-300 text-5xl font-bold lg:text-8xl">
           Our Team
           <div class="ourteam-container mt-10">
             <div class="">
@@ -148,7 +155,7 @@
           </div>
         </div>
         <div id="newsletter" class="container mb-10 pt-20 md:pt-10 mx-auto flex flex-col items-center">
-          <form class="container bg-black w-[65%] opacity-75 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+          <form class="container bg-black opacity-75 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
               <label
                 class="block text-gray-300 text-2xl py-2 font-bold mb-2"
@@ -174,27 +181,29 @@
             </div>
           </form>
         </div>
-        <div id="logo" class="flex flex-row bg-black/50 mx-5 rounded-lg justify-between">
+        <div id="logo" class="footer-banner flex lg:flex-row bg-black/50 mx-5 rounded-lg justify-between">
           <!-- First Column - Logo and Info -->
-          <div class="flex flex-row justify-left mb-5 text-white">
-            <div class="w-[200px] h-[200px] flex-shrink-0"> <!-- Fixed size container for logo -->
-              <img src='logo.png' alt="Stamper Logo" class="w-full h-full object-contain" />
+          <div class="footer-content flex flex-row sm:flex-col justify-center items-center mb-5 text-white">
+            <div class="bottomlogo w-[200px] h-[200px] flex-shrink-0"> <!-- Fixed size container for logo -->
+              <img src='logo.png' alt="Stamper Logo" class=" w-full h-full object-contain" />
             </div>
             <div class="text-white ml-4">
               <div class="text- mt-10 text-3xl text-orange-500">StamperAI</div>
-              <div class="text-white text-sm mb-[35px]">GenAI Lab for creativity</div>
-              <a href="https://www.google.com/maps/@28.5460071,77.1898796,16z?" class="text-white hover:text-orange-300 text-sm mt-[35px]" target="_blank">
-                IIT Delhi, Hauz Khas, New Delhi, 110016
-              </a>
-              <div class="text-white flex flex-row text-sm">
+              <div class="text-white text-sm mb-5 md:mb-[35px]">GenAI Lab for creativity</div>
+              <div>
+                <a href="https://www.google.com/maps/@28.5460071,77.1898796,16z?" class="text-white hover:text-orange-300 text-sm mt-[35px]" target="_blank">
+                  IIT Delhi, Hauz Khas, New Delhi, 110016
+                </a>
+              </div>
+              <div class="text-white flex justify-center text-sm">
                 Contact: <div class="ml-2 text-orange-500">info@stamper.ai</div>
               </div>
             </div>
           </div>
 
           <!-- Second Column - Company Points -->
-          <div class="text-gray-400 mt-8 mr-[100px]">
-            <h3 class="text-xl font-bold mb-4">References</h3>
+          <div class="references text-gray-400 items-center justify-center mt-10 ml-10 mr-10 md:mr-[100px]">
+            <div class="text-xl font-bold mb-0 lg:mb-4">References</div>
             <div class="flex flex-row gap-6 items-center">
               <div class="flex items-center w-[80px] h-[80px]">
                 <a href="https://meta.com" target="_blank" class="p-1 rounded-full hover:bg-orange-500/30 transition-colors duration-300 w-full h-full flex items-center justify-center">

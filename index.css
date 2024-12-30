@@ -77,12 +77,23 @@ body,
     background-position: 200% 50%;
   }
 }
+@media screen and (max-width: 760px) {
+  .animate-border {
+    margin: 0;
+    width: 80%;
 
+  }
+  
+}
 .animate-border {
   position: relative;
+
 }
 
+
+
 .animate-border::before {
+
   content: '';
   position: absolute;
   top: -10px;
@@ -91,16 +102,9 @@ body,
   left: -10px;
   background: linear-gradient(90deg, 
     #ffffff,
-    /* #00ff00, 
-    #0000ff, 
-    #4b0082, 
-    #9400d3, 
-    #ff0000   */
   );
-  background-size: 200% 200%;
   border-radius: 999px;
   z-index: -1;
-  animation: border-animation 4s linear infinite;
   box-shadow: 0 0px 15px rgba(255, 255, 255, 0.941);
   filter: brightness(1.3);
 }
@@ -113,11 +117,11 @@ body,
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 .ourteam-container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    height: 500px;
-    gap: 10px;
+    height: 50vh;
+    gap: 1vh;
   }
   
   .ourteam-container > div {
@@ -430,4 +434,79 @@ body,
     left: 0;
     width: 10%;
 }
+
+.footer-banner {
+    width: 100%;
+    display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer-banner {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header-items {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ourteam {
+    display: none;
+  }
   
+}
+
+@media screen and (max-width: 760px) {
+  .bottomlogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 100vw;
+
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-banner {
+    margin: 0;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .references {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .stamperai {
+    width: 100%;
+    padding: 0;
+    height: 100px;
+  }
+
+}
+
