@@ -135,42 +135,33 @@ body,
   }
   
   .ourteam-container > div:nth-of-type(1) {
-    background: url("./Team/Ajoy_S.png")
-      no-repeat 50% / cover;
-  }
-  
-  .ourteam-container > div:nth-of-type(2) {
     background: url("./Team/Tamal_M.png")
       no-repeat 50% / cover;
   }
   
-  .ourteam-container > div:nth-of-type(3) {
+  .ourteam-container > div:nth-of-type(2) {
     background: url("./Team/Keshav_R.png")
       no-repeat 50% / cover;
   }
   
-  .ourteam-container > div:nth-of-type(4) {
+  .ourteam-container > div:nth-of-type(3) {
     background: url("./Team/Yash_K.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(5) {
+  .ourteam-container > div:nth-of-type(4) {
     background: url("./Team/Sandeep_M.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(6) {
+  .ourteam-container > div:nth-of-type(5) {
     background: url("./Team/Gaurav_Y.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(7) {
+  .ourteam-container > div:nth-of-type(6) {
     background: url("./Team/Utkarsh_R.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(8) {
+  .ourteam-container > div:nth-of-type(7) {
     background: url("./Team/Abhijeet_K.png")
-      no-repeat 50% / cover;
-  }
-  .ourteam-container > div:nth-of-type(9) {
-    background: url("./Team/Saurav_S.png")
       no-repeat 50% / cover;
   }
   
