@@ -19,7 +19,7 @@
   <body id="body" style="margin: 0;">
     <canvas class="p-canvas-webgl" id="canvas-webgl" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
     <div id="content" style="position: relative; z-index: 1; height: 100vh; overflow-y: auto;">
-      <div>
+      <div >
         <div id="header" class="flex flex-row bg-black/50 p-4 rounded-[15px] justify-center items-center">
           <div class="flex-1"></div>
           <div class="flex items-center gap-4 mr-[10px]">
@@ -53,8 +53,10 @@
           </div>
         </div>
         <div id="stamperai" class="mt-[60px]">
-          <div class="relative bg-black w-[30%] mx-auto rounded-full flex items-center justify-center text-gray-400 font-bold text-4xl lg:text-7xl animate-border py-[60px] shadow-[inset_0_0_20px_rgba(255,255,255,0.3)]">
-            <div style="background-image: url(./stamperbanner.png); background-size: cover; width: 100%; height: 100%; background-position: center;" class="absolute rounded-full flex items-center justify-center px-[34px] py-[28px]">
+          <div class="relative bg-black w-[30%] mx-auto rounded-full flex items-center justify-center text-gray-400 font-bold text-4xl lg:text-7xl  animate-border  py-[60px] shadow-[inset_0_0_20px_rgba(255,255,255,0.3)]"
+          >
+            <div style = "background-image: url(./stamperbanner.png); background-size: cover; width: 100%; height: 100%; background-position: center;" class="absolute rounded-full flex items-center justify-center px-[34px] py-[28px]">
+
             </div>
           </div>
         </div>  
@@ -63,13 +65,23 @@
             <p>GenAI Lab for creativity</p>
           </div>
         </div>
-        <div id="description" class="h-[200px]"></div>
+        <div id="description" class = "h-[200px]"></div>
+
         <div id="dynamiclogo">
-          <script type="module" src="scripts/dynamiclogo.js"></script>
+            <!-- The div can remain empty as the container -->
+            <script type="module" src="scripts/dynamiclogo.js"></script>
         </div>
-        <div id="ourteam" class="text-center text-gray-300 text-lg font-bold lg:text-8xl">
+        <div id="ourteam" class = " text-center text-gray-300 text-lg font-bold lg:text-8xl">
           Our Team
           <div class="ourteam-container mt-10">
+            <div class="">
+              <a href="https://www.linkedin.com/in/bastyajayshenoy/" target="_blank">
+                <div class="ourteam-card">
+                  <h2 class="name">Ajay Shenoy</h2>
+                  <div class="position">PhD - EE, AIML, IISC <br>Chief R&D</div>
+                </div>
+              </a>
+            </div>
             <div>
               <a href="https://www.linkedin.com/in/tamal-majumder/" target="_blank">
                 <div class="ourteam-card">
@@ -97,8 +109,8 @@
             <div>
               <a href="https://www.linkedin.com/in/8896897898/" target="_blank">
                 <div class="ourteam-card">
-                  <h2 class="name">Sandeep Mohanty</h2>
-                  <div class="position">PGP - MBA, Physics <br>Co-Founder, Building Teams</div>
+                  <h2 class="top-content">Sandeep Mohanty</h2>
+                  <div class="bottom-content">PGP - MBA, Physics <br>Co-Founder, Building Teams</div>
                 </div>
               </a>
             </div>
@@ -126,30 +138,51 @@
                 </div>
               </a>
             </div>
+            <div>
+              <a href="https://www.linkedin.com/in/sauravsingh243/" target="_blank">
+                <div class="ourteam-card">
+                  <h2 class="name">Saurav Singh</h2>
+                  <div class="position">M.Tech - CS, IISC <br>Foundng Engineer</div>
+                </div>
+              </a>
+            </div>          
           </div>
         </div>
         <div id="newsletter" class="container mb-10 pt-20 md:pt-10 mx-auto flex flex-col items-center">
           <form class="container bg-black w-[65%] opacity-75 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
-              <label class="block text-gray-300 text-2xl py-2 font-bold mb-2" htmlFor="emailaddress">
+              <label
+                class="block text-gray-300 text-2xl py-2 font-bold mb-2"
+                htmlFor="emailaddress"
+              >
                 Signup for our newsletter
               </label>
-              <input class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out" id="emailaddress" type="text" placeholder="you@somewhere.com" />
+              <input
+                class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                id="emailaddress"
+                type="text"
+                placeholder="you@somewhere.com"
+              />
             </div>
             <div class="flex items-center justify-between pt-4">
-              <button class="button bg-black text-white font-bold py-2 px-2 z-10 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out" type="button">
-                Sign Up
+              <button
+
+                class="button bg-black text-white font-bold py-2 px-2 z-10 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                type="button"
+              >
+                  Sign Up
               </button>
             </div>
           </form>
         </div>
         <div id="logo" class="flex flex-row bg-black/50 mx-5 rounded-lg justify-between">
+          <!-- First Column - Logo and Info -->
           <div class="flex flex-row justify-left mb-5 text-white">
-            <div class="w-[200px] h-[200px] flex-shrink-0">
+            <div class="w-[200px] h-[200px] flex-shrink-0"> <!-- Fixed size container for logo -->
               <img src='logo.png' alt="Stamper Logo" class="w-full h-full object-contain" />
             </div>
             <div class="text-white ml-4">
-              <div class="mt-10 text-3xl text-orange-500">StamperAI</div>
+              <div class="text- mt-10 text-3xl text-orange-500">StamperAI</div>
               <div class="text-white text-sm mb-[35px]">GenAI Lab for creativity</div>
               <a href="https://www.google.com/maps/@28.5460071,77.1898796,16z?" class="text-white hover:text-orange-300 text-sm mt-[35px]" target="_blank">
                 IIT Delhi, Hauz Khas, New Delhi, 110016
@@ -159,6 +192,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Second Column - Company Points -->
           <div class="text-gray-400 mt-8 mr-[100px]">
             <h3 class="text-xl font-bold mb-4">References</h3>
             <div class="flex flex-row gap-6 items-center">
@@ -192,7 +227,10 @@
         </div>
         <div id="footer">
           <div class="w-full pb-3 text-sm text-center fade-in">
-            <a class="text-gray-500 no-underline hover:no-underline" href="#">
+            <a
+              class="text-gray-500 no-underline hover:no-underline"
+              href="#"
+            >
               &copy; StamperAI 2024
             </a>
           </div>
@@ -252,6 +290,20 @@
       
       varying vec2 vUv;
       
+      //
+      // GLSL textureless classic 3D noise "cnoise",
+      // with an RSL-style periodic variant "pnoise".
+      // Author:  Stefan Gustavson (stefan.gustavson@liu.se)
+      // Version: 2011-10-11
+      //
+      // Many thanks to Ian McEwan of Ashima Arts for the
+      // ideas for permutation and gradient selection.
+      //
+      // Copyright (c) 2011 Stefan Gustavson. All rights reserved.
+      // Distributed under the MIT license. See LICENSE file.
+      // https://github.com/ashima/webgl-noise
+      //
+      
       vec3 mod289(vec3 x)
       {
         return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -276,14 +328,15 @@
         return t*t*t*(t*(t*6.0-15.0)+10.0);
       }
       
+      // Classic Perlin noise
       float cnoise(vec3 P)
       {
-        vec3 Pi0 = floor(P);
-        vec3 Pi1 = Pi0 + vec3(1.0);
+        vec3 Pi0 = floor(P); // Integer part for indexing
+        vec3 Pi1 = Pi0 + vec3(1.0); // Integer part + 1
         Pi0 = mod289(Pi0);
         Pi1 = mod289(Pi1);
-        vec3 Pf0 = fract(P);
-        vec3 Pf1 = Pf0 - vec3(1.0);
+        vec3 Pf0 = fract(P); // Fractional part for interpolation
+        vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
         vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
         vec4 iy = vec4(Pi0.yy, Pi1.yy);
         vec4 iz0 = Pi0.zzzz;
