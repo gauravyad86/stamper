@@ -77,12 +77,23 @@ body,
     background-position: 200% 50%;
   }
 }
+@media screen and (max-width: 760px) {
+  .animate-border {
+    margin: 0;
+    width: 80%;
 
+  }
+  
+}
 .animate-border {
   position: relative;
+
 }
 
+
+
 .animate-border::before {
+
   content: '';
   position: absolute;
   top: -10px;
@@ -91,16 +102,9 @@ body,
   left: -10px;
   background: linear-gradient(90deg, 
     #ffffff,
-    /* #00ff00, 
-    #0000ff, 
-    #4b0082, 
-    #9400d3, 
-    #ff0000   */
   );
-  background-size: 200% 200%;
   border-radius: 999px;
   z-index: -1;
-  animation: border-animation 4s linear infinite;
   box-shadow: 0 0px 15px rgba(255, 255, 255, 0.941);
   filter: brightness(1.3);
 }
@@ -113,11 +117,11 @@ body,
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 .ourteam-container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    height: 500px;
-    gap: 10px;
+    height: 50vh;
+    gap: 1vh;
   }
   
   .ourteam-container > div {
@@ -131,42 +135,33 @@ body,
   }
   
   .ourteam-container > div:nth-of-type(1) {
-    background: url("./Team/Ajoy_S.png")
-      no-repeat 50% / cover;
-  }
-  
-  .ourteam-container > div:nth-of-type(2) {
     background: url("./Team/Tamal_M.png")
       no-repeat 50% / cover;
   }
   
-  .ourteam-container > div:nth-of-type(3) {
+  .ourteam-container > div:nth-of-type(2) {
     background: url("./Team/Keshav_R.png")
       no-repeat 50% / cover;
   }
   
-  .ourteam-container > div:nth-of-type(4) {
+  .ourteam-container > div:nth-of-type(3) {
     background: url("./Team/Yash_K.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(5) {
+  .ourteam-container > div:nth-of-type(4) {
     background: url("./Team/Sandeep_M.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(6) {
+  .ourteam-container > div:nth-of-type(5) {
     background: url("./Team/Gaurav_Y.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(7) {
+  .ourteam-container > div:nth-of-type(6) {
     background: url("./Team/Utkarsh_R.png")
       no-repeat 50% / cover;
   }
-  .ourteam-container > div:nth-of-type(8) {
+  .ourteam-container > div:nth-of-type(7) {
     background: url("./Team/Abhijeet_K.png")
-      no-repeat 50% / cover;
-  }
-  .ourteam-container > div:nth-of-type(9) {
-    background: url("./Team/Saurav_S.png")
       no-repeat 50% / cover;
   }
   
@@ -430,4 +425,192 @@ body,
     left: 0;
     width: 10%;
 }
+
+.footer-banner {
+    width: 100%;
+    display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer-banner {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header-items {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ourteam-container {
+    display: none;
+  }
   
+}
+
+@media screen and (max-width: 760px) {
+  .bottomlogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 100vw;
+
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-banner {
+    margin: 0;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .references {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .stamperai {
+    width: 100%;
+    padding: 0;
+    height: 100px;
+  }
+
+}
+
+.carousel-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+  margin-top: 40px;
+  scale: 0.9;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+  height: 600px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 35px;
+  
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.7) 0%,
+    rgba(0,0,0,0) 30%,
+    rgba(0,0,0,0) 70%,
+    rgba(0,0,0,0.7) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.position {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.3);
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 20%;
+  color: white;
+
+}
+
+.prev {
+  left: 1px;
+}
+
+.next {
+  right: 1px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.dot.active {
+  background: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-container {
+    display: none;
+  }
+  .ourteam{
+    font-size: 50px;
+  }
+  
+}
